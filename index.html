@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LaslesVPN — fast and secure VPN service with unlimited bandwidth and advanced privacy protection. Connect to global servers and enjoy the internet without limits. Free trial included.">
+
+    <title>LaslesVPN</title>
+    
+    <link rel="preload" as="image" href="./assets/images/Hero/hero-612.avif">
+
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Main.css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo" href="/">
+                <img class="logo__img" src="./assets/images/logo.svg" alt="logo LaslesVPN">
+                <span class="logo__name">Lasles<b>VPN</b></span>
+            </a>
+
+            <nav class="nav-menu">
+                <a class="nav-menu__link" href="#about">About</a>
+                <a class="nav-menu__link" href="#features">Features</a>
+                <a class="nav-menu__link" href="#pricing">Pricing</a>
+                <a class="nav-menu__link" href="#feedbacks">Testimonials</a>
+                <a class="nav-menu__link" href="#help">Help</a>
+            </nav>
+
+            <div class="account header__account">
+                <button class="btn">Sign In</button>
+                <button class="btn btn--line">Sign Up</button>
+            </div>
+
+            <button class="burger-btn" aria-label="Mobile menu button">
+                <span class="burger-btn__line"></span>
+                <span class="burger-btn__line"></span>
+                <span class="burger-btn__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Burger-menu -->
+    <div class="burger-menu">
+        <ul class="burger-menu__list">
+            <li class="burger-menu__item"><a class="burger-menu__link" href="#about">About</a></li>
+            <li class="burger-menu__item"><a class="burger-menu__link" href="#features">Features</a></li>
+            <li class="burger-menu__item"><a class="burger-menu__link" href="#pricing">Pricing</a></li>
+            <li class="burger-menu__item"><a class="burger-menu__link" href="#feedbacks">Testimonials</a></li>
+            <li class="burger-menu__item"><a class="burger-menu__link" href="#help">Help</a></li>
+        </ul>
+        <div class="account burger__account">
+            <button class="btn">Sign In</button>
+            <button class="btn btn--line">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__left">
+                    <h1 class="title hero__title">Want anything to be easy with <b>LaslesVPN.</b></h1>
+                    <p class="description hero__description">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
+                    <div class="hero__action">
+                        <button class="btn btn--rect btn--fill shadow-btn">Get Started</button>
+                    </div>             
+                </div>
+    
+                <div class="hero__image">
+                    <picture>
+                        <!-- AVIF -->
+                          <source   
+                              srcset="
+                                  ./assets/images/Hero/hero-320.avif 320w,
+                                  ./assets/images/Hero/hero-612.avif 612w,
+                                  ./assets/images/Hero/hero-1224.avif 1224w"
+                              sizes="(max-width: 576px) 290px, 612px"
+                              type="image/avif">
+                      
+                          <!-- WebP -->
+                          <source
+                              srcset="
+                                  ./assets/images/Hero/hero-320.webp 320w,
+                                  ./assets/images/Hero/hero-612.webp 612w,
+                                  ./assets/images/Hero/hero-1224.webp 1224w"
+                              sizes="(max-width: 576px) 290px, 612px"
+                              type="image/webp">
+                      
+                          <!-- PNG -->
+                          <source
+                              srcset="
+                                  ./assets/images/Hero/hero-320.png 320w,
+                                  ./assets/images/Hero/hero-612.png 612w,
+                                  ./assets/images/Hero/hero-1224.png 1224w"
+                              sizes="(max-width: 576px) 290px, 612px"
+                              type="image/png">
+                      
+                          <!-- fallback -->
+                          <img class="hero__img" src="./assets/images/Hero/hero-612.png" width="612" height="383" alt="alt text">
+                      </picture>
+                </div>
+            </div>                        
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <div class="benefits">
+        <div class="container">
+            <ul class="benefits__list">
+                <li class="benefit__item">
+                    <div class="benefit__image">
+                        <img class="benefit__icon" src="./assets/icons/user.svg" alt="">
+                    </div>
+                    <div class="benefit__info">
+                        <div class="benefit__heading">90+</div>
+                        <p class="benefit__desciption">Users</p>
+                    </div>
+                </li>
+                <li class="benefit__item">
+                    <div class="benefit__image">
+                        <img class="benefit__icon" src="./assets/icons/local.svg" alt="">
+                    </div>
+                    <div class="benefit__info">
+                        <div class="benefit__heading">30+</div>
+                        <p class="benefit__desciption">Locations</p>
+                    </div>
+                </li>
+                <li class="benefit__item">
+                    <div class="benefit__image">
+                        <img class="benefit__icon" src="./assets/icons/servers.svg" alt="">
+                    </div>
+                    <div class="benefit__info">
+                        <div class="benefit__heading">50+</div>
+                        <p class="benefit__desciption">Servers</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features__inner">
+                <div class="features__image">
+                    <picture>
+                      <!-- AVIF -->
+                      <source
+                        srcset="
+                          ./assets/images/Features/features-320.avif 320w,
+                          ./assets/images/Features/features-510.avif 510w,
+                          ./assets/images/Features/features-1020.avif 1220w"
+                        sizes="(max-width: 576px) 290px, 510px"
+                        type="image/avif">
+                    
+                      <!-- WebP -->
+                      <source
+                        srcset="
+                          ./assets/images/Features/features-320.webp 320w,
+                          ./assets/images/Features/features-510.webp 510w,
+                          ./assets/images/Features/features-1020.webp 1220w"
+                        sizes="(max-width: 576px) 290px, 510px"
+                        type="image/webp">
+                    
+                      <!-- PNG -->
+                      <source
+                        srcset="
+                          ./assets/images/Features/features-320.png 320w,
+                          ./assets/images/Features/features-510.png 510w,
+                          ./assets/images/Features/features-1020.png 1220w"
+                        sizes="(max-width: 576px) 290px, 510px"
+                        type="image/png">
+                    
+                      <!-- fallback -->
+                      <img class="features__img" src="./assets/images/Features/features-612.png"  width="509" height="415" loading="lazy" alt="Features You Can Use">
+                    </picture>
+                </div>
+                
+                <div class="features__right">
+                    <h1 class="title features__title">We Provide Many Features You Can Use</h1>
+                    <p class="description features__description">You can explore the features that we provide with fun and have their own functions each feature.</p>
+                    <ul class="features__list">
+                        <li class="feature__item">Powerfull online protection.</li>
+                        <li class="feature__item">Internet without borders.</li>
+                        <li class="feature__item">Supercharged VPN</li>
+                        <li class="feature__item">No specific time limits.</li>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section class="offers" id="pricing">
+        <div class="container">
+            <h1 class="title offers__title">Choose Your Plan</h1>
+            <p class="description offers__description">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+            <ul class="offers__list">
+                <li class="offer__item">
+                    <div class="offer__image">
+                        <picture>
+                            <source srcset="./assets/images/plan-image.webp" type="image/webp">
+                            <source srcset="./assets/images/plan-image@2x.webp 2x" type="image/webp">
+                            <source srcset="./assets/images/plan-image@2x.png 2x" type="image/png">
+                            <img class="offer__img" src="./assets/images/plan-image.png" width="145" height="166" alt="">
+                        </picture>
+                    </div>
+                    <div class="offer__title">Free Plan</div>
+                    <ul class="offer__description-list">
+                        <li class="offer__description-item">Unlimited Bandwitch</li>
+                        <li class="offer__description-item">Encrypted Connection</li>
+                        <li class="offer__description-item">No Traffic Logs</li>
+                        <li class="offer__description-item">Works on All Devices</li>
+                    </ul>
+                    <div class="offer__more">
+                        <div class="offer__price"><span>Free</span></div>
+                        <button class="btn btn--line offer__btn">Select</button>
+                    </div>
+                </li>
+
+                <li class="offer__item">
+                    <div class="offer__image">
+                        <picture>
+                            <source srcset="./assets/images/plan-image.webp" type="image/webp">
+                            <source srcset="./assets/images/plan-image@2x.webp 2x" type="image/webp">
+                            <source srcset="./assets/images/plan-image@2x.png 2x" type="image/png">
+                            <img class="offer__img" src="./assets/images/hero-image.png" width="145" height="166" alt="">
+                        </picture>
+                    </div>
+                    
+                    <div class="offer__title">Standard Plan</div>
+                    <ul class="offer__description-list">
+                        <li class="offer__description-item">Unlimited Bandwitch</li>
+                        <li class="offer__description-item">Encrypted Connection</li>
+                        <li class="offer__description-item">Yes Traffic Logs</li>
+                        <li class="offer__description-item">Works on All Devices</li>
+                        <li class="offer__description-item">Connect Anyware</li>
+                    </ul>
+                    <div class="offer__more">
+                        <div class="offer__price"><span>&#36;9</span> / month</div>
+                        <button class="btn btn--line offer__btn">Select</button>
+                    </div>
+                </li>
+
+                <li class="offer__item offer__item--active">
+                    <div class="offer__image">
+                        <picture>
+                            <source srcset="./assets/images/plan-image.webp" type="image/webp">
+                            <source srcset="./assets/images/plan-image@2x.webp 2x" type="image/webp">
+                            <source srcset="./assets/images/plan-image@2x.png 2x" type="image/png">
+                            <img class="offer__img" src="./assets/images/hero-image.png" width="145" height="166" alt="">
+                        </picture>
+                    </div>
+                    
+                    <div class="offer__title">Premium Plan</div>
+                    <ul class="offer__description-list">
+                        <li class="offer__description-item">Unlimited Bandwitch</li>
+                        <li class="offer__description-item">Encrypted Connection</li>
+                        <li class="offer__description-item">Yes Traffic Logs</li>
+                        <li class="offer__description-item">Works on All Devices</li>
+                        <li class="offer__description-item">Connect Anyware</li>
+                        <li class="offer__description-item">Get New Features</li>
+                    </ul>
+                    <div class="offer__more">
+                        <div class="offer__price"><span>&#36;12</span> / month</div>
+                        <button class="btn btn--line offer__btn offer__btn">Select</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+     
+    <!-- NETWORK -->
+    <section class="network">
+        <div class="container">
+            <h1 class="title network__title">Huge Global Network of Fast VPN</h1>
+            <p class="description network__description">See <span>LaslesVPN</span> everywhere to make it easier for you when you move locations.</p>
+            
+            <div class="network__image">
+                <picture>
+                    <!-- AVIF -->
+                    <source
+                        srcset="
+                        ./assets/images/Network/network-320.avif 320w,
+                        ./assets/images/Network/network-1060.avif 1060w,
+                        ./assets/images/Network/network-2120.avif 2120w"
+                        sizes="(max-width: 576px) 290px, 100vw"
+                        type="image/avif">
+                    
+                    <!-- WebP -->
+                    <source
+                        srcset="
+                        ./assets/images/Network/network-320.webp 320w,
+                        ./assets/images/Network/network-1060.webp 1060w,
+                        ./assets/images/Network/network-2120.webp 2120w"
+                        sizes="(max-width: 576px) 290px, 100vw"
+                        type="image/webp">
+                    
+                    <!-- PNG -->
+                    <source
+                        srcset="
+                        ./assets/images/Network/network-320.png 320w,
+                        ./assets/images/Network/network-1060.png 1060w,
+                        ./assets/images/Network/network-2120.png 2120w"
+                        sizes="(max-width: 576px) 290px, 100vw"
+                        type="image/png">
+                    
+                    <!-- fallback -->
+                    <img class="network__img" src="./assets/images/Network/network-1060.png" width="1060" height="538" loading="lazy" alt="Global Network of Fast VPN">
+                    </picture>
+            </div>
+
+            <ul class="sponsors">
+                <li class="sponsor__item"><img class="sponsor__img" width="190" height="60" loading="lazy" src="./assets/images/sponsor-1.png" alt=""></li>
+                <li class="sponsor__item"><img class="sponsor__img" width="190" height="60" loading="lazy" src="./assets/images/sponsor-2.png" alt=""></li>
+                <li class="sponsor__item"><img class="sponsor__img" width="190" height="60" loading="lazy" src="./assets/images/sponsor-3.png" alt=""></li>
+                <li class="sponsor__item"><img class="sponsor__img" width="190" height="60" loading="lazy" src="./assets/images/sponsor-4.png" alt=""></li>
+                <li class="sponsor__item"><img class="sponsor__img" width="190" height="60" loading="lazy" src="./assets/images/sponsor-5.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- FEEDBACKS -->
+    <section class="feedbacks" id="feedbacks">
+        <div class="container">
+            <h1 class="title feedbacks__title">Trusted by Thousands of Happy Customer</h1>
+            <p class="description feedbacks__description">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+            
+            
+            <div class="swiper feedbacks__slider">
+                
+                <div class="swiper-wrapper feedback__slider-wrapper">
+
+                    <div class="swiper-slide feedback__slide">
+                        <div class="feedback__header">
+                            <div class="feedback__user">
+                                <div class="feedback__user-image">
+                                    <img class="feedback__user-img" src="./assets/images/feedback-slide-1.png" width="50" height="50"  loading="lazy" alt="">
+                                </div>
+                                <div class="feedback__user-info">
+                                    <div class="feedback__user-name">Viezh Robert</div>
+                                    <div class="feedback__user-city">Warsaw, Poland</div>
+                                </div>
+                            </div>
+                            <div class="feedback__rate"><span>4.5</span><img src="./assets/icons/star.svg" alt=""></div>
+                        </div>
+                        <p class="feedback__text">“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.</p>
+                    </div>
+
+                    <div class="swiper-slide feedback__slide">
+                        <div class="feedback__header">
+                            <div class="feedback__user">
+                                <div class="feedback__user-image">
+                                    <img class="feedback__user-img" src="./assets/images/feedback-slide-2.png" width="50" height="50"  loading="lazy" alt="">
+                                </div>
+                                <div class="feedback__user-info">
+                                    <div class="feedback__user-name">Yessica Christy</div>
+                                    <div class="feedback__user-city">Shanxi, China</div>
+                                </div>
+                            </div>
+                            <div class="feedback__rate"><span>4.5</span><img src="./assets/icons/star.svg" alt=""></div>
+                        </div>
+                        <p class="feedback__text">“I like it because I like to travel far and still can connect with high speed.”.</p>
+                    </div>
+
+                    <div class="swiper-slide feedback__slide">
+                        <div class="feedback__header">
+                            <div class="feedback__user">
+                                <div class="feedback__user-image">
+                                    <img class="feedback__user-img" src="./assets/images/feedback-slide-3.png" width="50" height="50"  loading="lazy" alt="">
+                                </div>
+                                <div class="feedback__user-info">
+                                    <div class="feedback__user-name">Kim Young Jou</div>
+                                    <div class="feedback__user-city">Seoul, South Korea</div>
+                                </div>
+                            </div>
+                            <div class="feedback__rate"><span>4.5</span><img src="./assets/icons/star.svg" alt=""></div>
+                        </div>
+                        <p class="feedback__text">“This is very unusual for my business that currently requires a virtual private network that has high security.”.</p>
+                    </div>
+                    
+                    <div class="swiper-slide feedback__slide">
+                        <div class="feedback__header">
+                            <div class="feedback__user">
+                                <div class="feedback__user-image">
+                                    <img class="feedback__user-img" src="./assets/images/feedback-slide-3.png" width="50" height="50"  loading="lazy" alt="">
+                                </div>
+                                <div class="feedback__user-info">
+                                    <div class="feedback__user-name">Kim Young Jou</div>
+                                    <div class="feedback__user-city">Seoul, South Korea</div>
+                                </div>
+                            </div>
+                            <div class="feedback__rate"><span>4.5</span><img src="./assets/icons/star.svg" alt=""></div>
+                        </div>
+                        <p class="feedback__text">“This is very unusual for my business that currently requires a virtual private network that has high security.”.</p>
+                    </div>
+
+                    <div class="swiper-slide feedback__slide">
+                        <div class="feedback__header">
+                            <div class="feedback__user">
+                                <div class="feedback__user-image">
+                                    <img class="feedback__user-img" src="./assets/images/feedback-slide-3.png" width="50" height="50"  loading="lazy" alt="">
+                                </div>
+                                <div class="feedback__user-info">
+                                    <div class="feedback__user-name">Kim Young Jou</div>
+                                    <div class="feedback__user-city">Seoul, South Korea</div>
+                                </div>
+                            </div>
+                            <div class="feedback__rate"><span>4.5</span><img src="./assets/icons/star.svg" alt=""></div>
+                        </div>
+                        <p class="feedback__text">“This is very unusual for my business that currently requires a virtual private network that has high security.”.</p>
+                    </div>
+
+                    <div class="swiper-slide feedback__slide">
+                        <div class="feedback__header">
+                            <div class="feedback__user">
+                                <div class="feedback__user-image">
+                                    <img class="feedback__user-img" src="./assets/images/feedback-slide-3.png" width="50" height="50" alt="">
+                                </div>
+                                <div class="feedback__user-info">
+                                    <div class="feedback__user-name">Kim Young Jou</div>
+                                    <div class="feedback__user-city">Seoul, South Korea</div>
+                                </div>
+                            </div>
+                            <div class="feedback__rate"><span>4.5</span><img src="./assets/icons/star.svg" alt=""></div>
+                        </div>
+                        <p class="feedback__text">“This is very unusual for my business that currently requires a virtual private network that has high security.”.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="feedbacks__slider-buttons">
+                    <button class="feedbacks__slider-button-prev" aria-label="Slider button prev">
+                        <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.75 14.0029H8.925L13.4625 8.55291C13.6747 8.29764 13.7768 7.96854 13.7463 7.638C13.7158 7.30747 13.5553 7.00258 13.3 6.79041C13.0447 6.57823 12.7156 6.47616 12.3851 6.50663C12.0546 6.53711 11.7497 6.69764 11.5375 6.95291L5.2875 14.4529C5.24545 14.5126 5.20785 14.5752 5.175 14.6404C5.175 14.7029 5.175 14.7404 5.0875 14.8029C5.03084 14.9462 5.00118 15.0988 5 15.2529C5.00118 15.407 5.03084 15.5596 5.0875 15.7029C5.0875 15.7654 5.0875 15.8029 5.175 15.8654C5.20785 15.9306 5.24545 15.9933 5.2875 16.0529L11.5375 23.5529C11.655 23.694 11.8022 23.8075 11.9686 23.8853C12.1349 23.963 12.3164 24.0032 12.5 24.0029C12.7921 24.0035 13.0751 23.9018 13.3 23.7154C13.4266 23.6105 13.5312 23.4816 13.6079 23.3362C13.6846 23.1907 13.7318 23.0316 13.7469 22.8679C13.762 22.7042 13.7447 22.5391 13.6959 22.3821C13.6471 22.2251 13.5678 22.0792 13.4625 21.9529L8.925 16.5029H23.75C24.0815 16.5029 24.3995 16.3712 24.6339 16.1368C24.8683 15.9024 25 15.5844 25 15.2529C25 14.9214 24.8683 14.6034 24.6339 14.369C24.3995 14.1346 24.0815 14.0029 23.75 14.0029Z" fill=""/>
+                        </svg>
+                    </button>
+                    <button class="feedbacks__slider-button-next" aria-label="Slider button next">
+                        <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 14.0029H21.075L16.5375 8.55291C16.3253 8.29764 16.2232 7.96854 16.2537 7.638C16.2842 7.30747 16.4447 7.00258 16.7 6.79041C16.9553 6.57823 17.2844 6.47616 17.6149 6.50663C17.9454 6.53711 18.2503 6.69764 18.4625 6.95291L24.7125 14.4529C24.7545 14.5126 24.7922 14.5752 24.825 14.6404C24.825 14.7029 24.825 14.7404 24.9125 14.8029C24.9692 14.9462 24.9988 15.0988 25 15.2529C24.9988 15.407 24.9692 15.5596 24.9125 15.7029C24.9125 15.7654 24.9125 15.8029 24.825 15.8654C24.7922 15.9306 24.7545 15.9933 24.7125 16.0529L18.4625 23.5529C18.345 23.694 18.1978 23.8075 18.0314 23.8853C17.8651 23.963 17.6836 24.0032 17.5 24.0029C17.2079 24.0035 16.9249 23.9018 16.7 23.7154C16.5734 23.6105 16.4688 23.4816 16.3921 23.3362C16.3154 23.1907 16.2682 23.0316 16.2531 22.8679C16.238 22.7042 16.2553 22.5391 16.3041 22.3821C16.3529 22.2251 16.4322 22.0792 16.5375 21.9529L21.075 16.5029H6.25C5.91848 16.5029 5.60054 16.3712 5.36612 16.1368C5.13169 15.9024 5 15.5844 5 15.2529C5 14.9214 5.13169 14.6034 5.36612 14.369C5.60054 14.1346 5.91848 14.0029 6.25 14.0029Z" fill=""/>
+                        </svg>                        
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <div class="subscribe">
+        <div class="container">
+            <div class="subscribe__inner">
+                <div class="subscribe__left">
+                    <div class="title subscribe__title">Subscribe Now for Get Special Features!</div>
+                    <p class="description subscribe__description">Let's subscribe with us and find the fun.</p>
+                </div>
+                <button class="btn btn--rect btn--fill shadow-btn">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                
+                    <div>
+                        <a class="logo footer__logo" href="#">
+                            <img class="logo__img" src="./assets/images/logo.svg" alt="logo LaslesVPN">
+                            <span class="logo__name">Lasles<b>VPN</b></span>
+                        </a>
+    
+                        <p class="description footer__description"><span>LaslesVPN</span> is a private virtual network that has unique features and has high security.</p>
+                    </div>
+                    <div>
+                        <div class="socials">
+                            <a class="social__link" href="#" aria-label="Link on facebook">
+                                <svg class="social__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path>
+                                </svg>
+                            </a>
+                            <a class="social__link" href="#" aria-label="Link on twitter">
+                                <svg class="social__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z"></path>
+                                </svg>
+                            </a>
+                            <a class="social__link" href="#" aria-label="Link on instagram">
+                                <svg class="social__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="copyright">©2020 <span>LaslesVPN</span></div>
+                    </div>
+                </div>
+    
+                <div class="footer__right">
+                    <div class="footer__links">
+                        <div class="footer__links-title">Product</div>
+                        <a class="footer__link" href="#">Download</a>
+                        <a class="footer__link" href="#">Pricing</a>
+                        <a class="footer__link" href="#">Locations</a>
+                        <a class="footer__link" href="#">Server</a>
+                        <a class="footer__link" href="#">Countries</a>
+                        <a class="footer__link" href="#">Blog</a>
+                    </div>
+                    <div class="footer__links">
+                        <div class="footer__links-title">Engage</div>
+                        <a class="footer__link" href="#">LaslesVPN ?</a>
+                        <a class="footer__link" href="#">FAQ</a>
+                        <a class="footer__link" href="#">Tutorials</a>
+                        <a class="footer__link" href="#">About Us</a>
+                        <a class="footer__link" href="#">Privacy Policy</a>
+                        <a class="footer__link" href="#">Terms of Service</a>
+                    </div>
+                    <div class="footer__links">
+                        <div class="footer__links-title">Earn Money</div>
+                        <a class="footer__link" href="#">Affiliate</a>
+                        <a class="footer__link" href="#">Become Partner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  
+    <!-- Main.js -->
+    <script src="./assets/js/main.js" defer></script>
+</body>
+</html>

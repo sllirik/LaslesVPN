@@ -1,0 +1,46 @@
+:root {
+/* ===== ЦВЕТОВАЯ ПАЛИТРА ============================== ЦВЕТОВАЯ ПАЛИТРА =====*/
+
+    /* --clr-accent: #f53838; */
+    --clr-accent: #dc3232;
+
+    --clr-white:  #ffffff;
+    --clr-gray:   #dde0e4;
+    --clr-body:   #4f5665;
+    --clr-title:  #0b132a;
+
+
+
+/* ===== ТИПОГРАФИКА ======================================== ТИПОГРАФИКА =====*/
+
+    --ff-primary: 'Rubik', sans-serif;
+
+    --fz-html: 10px;            /* HTML */
+
+    --fz-body:        1.6rem;   /* Основной текст */
+    --fz-title-large: 5rem;     /* Большой заголовок на главном блоке */
+    --fz-title:       3.5rem;   /* Основные Заголовки */
+    --fz-heading:     1.8rem;   /* Заголовки карточек, отзывов */    
+    --fz-small:       1.4rem;   /* Мелкий текст */
+    --fz-logo:        2rem;     /* Текст Логотипа */
+
+    --fw-regular: 400;
+    --fw-medium:  500;
+    --fw-bold:    700;
+
+
+}
+
+
+@media (max-width: 991.98px) {
+    :root {
+        --fz-title-large: 3.2rem;
+        --fz-title: 2.6rem;
+    }
+}
+@media (max-width: 575.98px) {
+    :root {
+        --fz-title-large: 2.6rem;
+        --fz-title: 2.4rem;
+    }
+}
