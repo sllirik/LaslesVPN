@@ -520,10 +520,10 @@ body {
 .offers__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 3rem;
 }
 .offer__item {
-    padding: 8rem 7rem 5rem;
+    padding: 5rem 4rem 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -604,6 +604,7 @@ body {
         
     }
 }
+
 @media (max-width: 991.98px) {
     .offers__list {
         grid-template-columns: repeat(auto-fill, 30rem);
